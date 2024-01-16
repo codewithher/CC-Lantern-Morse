@@ -6,18 +6,21 @@
 #ifndef Morse_h
 #define Morse_h
 
+#include "Adafruit_NeoPixel.h"
 #include "Arduino.h"
 
-class Morse
-{
+class Morse {
   public:
-    Morse(int pin);
+    Morse(int pin, int numPixels);
     void begin();
     void dot();
     void dash();
   private:
-    // _ is common practice to denote private variables
+    void lightOn();
+    void lightOff();
     int _pin;
+    int _numPixels;
+    Adafruit_NeoPixel _pixels;
 };
 
 #endif
