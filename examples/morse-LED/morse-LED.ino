@@ -1,3 +1,17 @@
+/**
+ * @file morse-led.ino
+ * @author Ryan Lay (ryan@codewithher.org)
+ * @brief This file shows the slightly adapted Morse code example to use the 
+ * Adafruit library to blink a light instead of sending data to pins. This shows
+ * what it would look like without the morse code library.
+ * @version 0.1
+ * @date 2024-01-15
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 ///////////////////////////// DON'T TOUCH /////////////////////////////////////
 #include <Adafruit_NeoPixel.h>
 #define PIN         6
