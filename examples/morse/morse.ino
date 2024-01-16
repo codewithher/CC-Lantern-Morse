@@ -1,14 +1,13 @@
 #include <Morse.h>
 
-Morse morse();
+Morse morse(6,1);
 
-void setup()
-{
+void setup() {
   morse.begin();
 }
 
-void loop()
-{
+void loop() {
+  // Blinks SOS in morse code
   morse.dot(); morse.dot(); morse.dot();
   morse.dash(); morse.dash(); morse.dash();
   morse.dot(); morse.dot(); morse.dot();
