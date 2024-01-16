@@ -1,14 +1,6 @@
 #include "Morse.h"
 
-Morse::Morse() {
-  // Assumes default lantern core design with 1 LED and using pin 6
-  _pin = 6;
-  _numPixels = 1;
-  _pixels = Adafruit_NeoPixel(_numPixels, _pin, NEO_GRB + NEO_KHZ800);
-}
-
 Morse::Morse(int pin, int numPixels) {
-  // Leaves a custom constructor for other lantern core circuits
   _pin = pin;
   _numPixels = numPixels;
   _pixels = Adafruit_NeoPixel(_numPixels, _pin, NEO_GRB + NEO_KHZ800);
@@ -34,11 +26,11 @@ void Morse::dash() {
 }
 
 void Morse::lightOn() {
-  pixels.setPixelColor(0, 150, 150, 150);
-  pixels.show();   // Send the updated pixel colors to the hardware.
+  _pixels.setPixelColor(0, 150, 150, 150);
+  _pixels.show();   // Send the updated pixel colors to the hardware.
 }
 
 void Morse::lightOff() {
-  pixels.setPixelColor(0, 0, 0, 0);
-  pixels.show();
+  _pixels.setPixelColor(0, 0, 0, 0);
+  _pixels.show();
 }
