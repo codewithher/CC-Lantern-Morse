@@ -23,6 +23,21 @@ void loop() {
 
 ///////////////////////////////////////////////////////////////////////////////
 // Functions
+void dot()
+{
+  lightOn();
+  delay(250);
+  lightOff();
+  delay(250);
+}
+
+void dash()
+{
+  lightOn();
+  delay(1000);
+  lightOff();
+  delay(250);
+}
 
 void lightOn() {
   // Set color values here! Colors range from 0 to 255
@@ -43,20 +58,4 @@ void lightOff() {
   
   pixels.setPixelColor(0, pixels.Color(Red, Green, Blue));
   pixels.show();   // Send the updated pixel colors to the hardware.
-}
-
-void dot()
-{
-  lightOn();
-  delay(250);
-  lightOff();
-  delay(250);
-}
-
-void dash()
-{
-  lightOn();
-  delay(1000);
-  lightOff();
-  delay(250);
 }
