@@ -9,7 +9,8 @@ This library implements `dot()` and `dash()` functionality which is used in Mors
 To install this repo as a library:
 
 Pre-requisites:
-- [ ] Installed Ardunio IDE
+- [ ] Installed [Ardunio IDE](https://www.arduino.cc/en/software)
+- [ ] Installed [Adafruit Neopixel Library](https://github.com/adafruit/Adafruit_NeoPixel)
 
 Instructions:
 
